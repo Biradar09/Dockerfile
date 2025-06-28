@@ -1,5 +1,5 @@
 vi Dockerfile
-
+# 🔵 Stage 1: Build
 FROM eclipse-temurin:21-jdk AS builder
 
 WORKDIR /usr/src/app/
@@ -17,7 +17,7 @@ COPY ./pb ./proto   (protofile)
 RUN chmod +x ./gradlew 
 RUN ./gradlew installDist -PprotoSourceDir=./proto
 
-
+# 🟢 Stage 2: Run with JRE only
 FROM eclipse-temurin:21-jre
 
 WORKDIR /usr/src/app/
