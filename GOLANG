@@ -1,4 +1,4 @@
-**vi Dockerfile  *(https://docs.docker.com/guides/golang/build-images/)**
+**vi Dockerfile  (https://docs.docker.com/guides/golang/build-images/)**
 
 FROM golang:1.22-alpine AS builder
 WORKDIR /usr/src/app
