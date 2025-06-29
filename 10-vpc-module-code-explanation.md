@@ -1,6 +1,5 @@
 # Code explanation for VPC module
 
-# broooooo
 ## **1. Creating a VPC**
 ```hcl
 resource "aws_vpc" "main" {
